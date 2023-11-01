@@ -56,7 +56,6 @@ const Detail = () => {
       };
 
       setDetailPokemon(pokemonDetails);
-      console.log(pokemonDetails);
     } catch (error) {
       console.error("Error fetching Pokemon details:", error);
     }

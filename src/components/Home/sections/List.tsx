@@ -41,7 +41,7 @@ const List = () => {
     <>
       <div
         id="list"
-        className="bg-[url('/images/bg-home2.png')] bg-cover bg-no-repeat bg-right xl:bg-top w-full min-h-screen pb-20 pt-2 flex flex-col gap-5 w-full"
+        className="bg-[url('/images/bg-home2.png')] bg-cover bg-no-repeat bg-right xl:bg-top min-h-screen pb-20 pt-2 flex flex-col gap-5 w-full"
       >
         <div className="px-4 md:px-8">
           <h2 className="text-white text-center text-2xl md:text-3xl font-bold py-4">

@@ -14,14 +14,14 @@ type valueProvider = {
   setSelected: React.Dispatch<React.SetStateAction<Selected>>;
 };
 
-// Context Competition
 export const TypeContext = createContext<valueProvider>({
   selected: {
-    name: "normal",
-    url: "https://pokeapi.co/api/v2/type/1",
+    name: "",
+    url: "",
   },
   setSelected: () => {},
 });
+
 
 export const TypeProvider: React.FC<ChildProviderProps> = ({
   children,
@@ -31,10 +31,9 @@ export const TypeProvider: React.FC<ChildProviderProps> = ({
     url: "https://pokeapi.co/api/v2/type/1",
   });
 
-  console.log(selected);
   return (
     <TypeContext.Provider
-      value={{ selected: selected, setSelected: setSelected }}
+      value={{ selected, setSelected }}
     >
       {children}
     </TypeContext.Provider>
